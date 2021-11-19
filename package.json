@@ -1,0 +1,20 @@
+{
+  "name": "airportobject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:report": "jest --coverage=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laminsuso/airportObject.git"
+  },
+  "author": "Lamin Suso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laminsuso/airportObject/issues"
+  },
+  "homepage": "https://github.com/laminsuso/airportObject#readme"
+}
