@@ -1,19 +1,19 @@
-const Person = require("./person")
+const Person = require('./person')
 const Bag = require('./Bag')
+const { test, expect } = require('@jest/globals')
 
-describe('Person', () =>{
-    test('has a name', () =>{
-        const testPerson = new Person("Lamin")
-        expect(testPerson.name).toBe('Lamin')
+describe('Person', () => {
+    const testPerson = new Person("Joe")
+    const testBag = new Bag(12)
 
+    test('has a name', () => {
+        expect(testPerson.name).toBe("Joe")
     })
 
-    describe('Bag', () =>{
-        test('has a bag', () =>{
-            const testBag = new Bag(10)
-            expect(testBag.weight).toBe(10)
-    
-        })
-
+    test('has a bag', () => {
+        testPerson.addBag(testBag)
+        expect(testPerson.bags.length).toBe(1)
+        //expect(testBag.bags[0]).toBe(testBag)
+    })
 
 })

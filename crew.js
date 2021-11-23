@@ -1,7 +1,7 @@
 const Person = require('./person')
 class Crew extends Person{
-    constructor(name,bag,position, staffNumber){
-        super(name,bag)
+    constructor(name,bags,position, staffNumber){
+        super(name,bags)
         this.position = position
         this.staffNumber = staffNumber
     }
